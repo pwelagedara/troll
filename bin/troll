@@ -1,0 +1,17 @@
+#!/bin/bash
+
+delayInSeconds=${1:-5}
+
+# https://github.com/kylebebak/notes/blob/master/bin/notes
+SOURCE="${BASH_SOURCE[0]}"
+while [ -h "$SOURCE" ]; do
+  DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
+  SOURCE="$(readlink "$SOURCE")"
+  [[ $SOURCE != /* ]] && SOURCE="$DIR/$SOURCE"
+done
+DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
+rootDir=$(dirname "${DIR}")
+
+echo "Trolling...!!!"
+
+( sleep $delayInSeconds ; afplay "$rootDir/files/meow.mp3" ) &
