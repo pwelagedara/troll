@@ -1,6 +1,6 @@
 #!/bin/bash
 
-delayInSeconds=${1:-5}
+delayInSeconds=${1:-300}
 
 # https://github.com/kylebebak/notes/blob/master/bin/notes
 SOURCE="${BASH_SOURCE[0]}"
@@ -12,6 +12,6 @@ done
 DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
 rootDir=$(dirname "${DIR}")
 
-echo "Trolling...!!!"
+echo "Trolling Initiated...!!!"
 
 ( sleep $delayInSeconds ; afplay "$rootDir/files/meow.mp3" ) &
