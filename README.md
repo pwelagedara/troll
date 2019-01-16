@@ -2,7 +2,7 @@
 
 ## References
 
-- [A Tutorial on this][reference]
+- [A good Tutorial][reference]
 - [GitHub Repo of the Formula][reference_github]
 - [GitHub Repo of the Tap][reference_github_tap]
 
